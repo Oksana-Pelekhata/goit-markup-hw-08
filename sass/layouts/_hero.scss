@@ -1,0 +1,74 @@
+.hero {
+    background-color: var(--background-color);
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    margin-left: auto;
+    margin-right: auto;
+    background-image: var(--gradient), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+        @media screen and (min-width: 768px) {
+        padding-right: 189px;
+        padding-left: 189px;
+        }
+        @media screen and (min-width: 1200px) {
+        // max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        padding-right: 237px;
+        padding-left: 237px;
+        }
+}
+
+.hero__title {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42/26);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: calc(60/44);
+        }
+}
+
+.hero__btn {
+    display: inline-block;
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 10px 24px;
+    text-align: center;
+    border: 0;
+
+    @media screen and (min-width: 1200px) {
+    min-width: 216px;
+    padding: 10px 32px;
+    }
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    background-color: var(--selection-color);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: background-color var(--transition-func);
+    &:hover,
+    &:focus,
+    &:active {
+            background-color: var(--active-button);
+        }
+}
+

@@ -1,0 +1,30 @@
+.logo {
+    margin-right: 93px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    letter-spacing: 0.03em;
+
+    color: var(--selection-color);
+    transition: color var(--transition-func);
+
+    &:hover,
+    &:focus {
+        color: var(--selection-color);
+    }
+}
+
+.logo__header {
+    color: #000000;
+    transition: color var(--transition-func);
+
+    &:hover,
+    &:focus {
+        color: var(--selection-color);
+    }
+}
+
+.logo-footer {
+    color: var(--color-white);
+}
