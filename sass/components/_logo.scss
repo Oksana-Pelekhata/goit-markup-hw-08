@@ -1,17 +1,28 @@
 .logo {
-    margin-right: 93px;
+    
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1923;
+    font-size: 24px;
+    line-height: calc(28/24);
+
     letter-spacing: 0.03em;
 
     color: var(--selection-color);
     transition: color var(--transition-func);
 
-    &:hover,
     &:focus {
         color: var(--selection-color);
+    }
+    @include tablet {
+        .logo:hover {
+            color: var(--selection-color);
+        }
+    }
+
+    @include desktop {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.1923;
     }
 }
 
@@ -19,9 +30,14 @@
     color: #000000;
     transition: color var(--transition-func);
 
-    &:hover,
     &:focus {
         color: var(--selection-color);
+    }
+
+    @include tablet {
+        &:hover {
+        color: var(--selection-color);
+    }
     }
 }
 
