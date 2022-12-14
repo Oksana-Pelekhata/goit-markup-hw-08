@@ -14,13 +14,14 @@
         color: var(--selection-color);
     }
     @include tablet {
+        // margin-right: 87px;
         .logo:hover {
             color: var(--selection-color);
         }
     }
 
     @include desktop {
-    margin-right: 93px;
+    // margin-right: 93px;
     font-size: 26px;
     line-height: 1.1923;
     }
@@ -35,9 +36,14 @@
     }
 
     @include tablet {
+        margin-right: 87px;
         &:hover {
         color: var(--selection-color);
     }
+    }
+
+    @include desktop {
+        margin-right: 92px;
     }
 }
 

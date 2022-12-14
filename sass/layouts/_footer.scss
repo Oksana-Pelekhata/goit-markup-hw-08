@@ -2,11 +2,20 @@
     background-color: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .container-footer {
     display: flex;
+    text-align: center;
+
+    @include desktop{
     align-items: baseline;
+    }
+    
 }
 
 .address-list {
@@ -15,6 +24,10 @@
     line-height: 1.7142;
     letter-spacing: 0.03em;
     font-style: normal;
+
+    @include mobile {
+        margin-bottom: 60px;
+    }
 }
 
 .address-item:not(:last-child) {
@@ -35,8 +48,12 @@
 }
 
 .contact-us-block {
-    margin-left: auto;
+    display: block;
     color: var(--color-white);
+
+    @include desktop {
+        margin-left: auto;
+    }
 }
 
 .contact-us-text {
