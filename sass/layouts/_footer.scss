@@ -20,7 +20,7 @@
     @include desktop{
     display: flex;
     align-items: baseline;
-    // text-align: ;
+    text-align: left;
     }
     
 }
@@ -123,14 +123,21 @@
 
 .footer-input {
     height: 50px;
-    min-width: 358px;
+    // min-width: 358px;
 
     margin-bottom: 20px;
 
     @include desktop {
         margin-bottom: 0;
     }
-
+    
+    width: 100%;
+    @include mobile {
+        width: 450px;
+    }
+    @include desktop {
+        width: 358px;
+    }
     padding: 15px 16px;
     color: var(--color-white);
     background-color: var(--background-color);
@@ -199,5 +206,17 @@
         justify-content: space-evenly;
         text-align: center;
         margin-bottom: 60px;
+    }
+    @include desktop {
+        text-align: left;
+        margin-bottom: 0;
+        align-items: baseline;
+    }
+}
+
+.footer-left-block {
+    @include desktop {
+        text-align: left;
+        margin-right: 70px;
     }
 }
