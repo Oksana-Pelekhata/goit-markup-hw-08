@@ -5,7 +5,6 @@
 .header__container {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
     height: 60px;
 
     @media screen and(max-width: 767px) {
@@ -25,13 +24,6 @@
     width: 100%;
     align-items: center;
     }
-
-    // @include desktop {
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.1429;
-    // letter-spacing: 0.02em;
-    // }
 }
 
 .menu {
@@ -67,6 +59,10 @@
     gap: 10px;
     justify-content: center;
     padding-top: 21px;
+
+    @include tablet {
+        padding-top: 0;
+    }
     
 
     @include desktop {

@@ -34,6 +34,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-black);
+
+    @media screen and (max-width: 767px){
+        text-align: center;
+    }
 }
 
 .advantages-list__text {

@@ -172,6 +172,8 @@ body {
   min-width: 320px;
   min-height: 609px;
   padding: 40px;
+  width: calc(100% - 30px);
+  max-width: 450px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -520,6 +522,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-black);
+}
+@media screen and (max-width: 767px) {
+  .advantages-list__subtitle {
+    text-align: center;
+  }
 }
 
 .advantages-list__text {
@@ -950,6 +957,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 21px;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts {

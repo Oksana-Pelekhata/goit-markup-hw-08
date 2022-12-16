@@ -25,6 +25,9 @@
     min-height: 609px;
     padding: 40px;
 
+    width: calc(100% - 30px);
+    max-width: 450px;
+
     @include mobile {
     min-width: 450px;
     }
@@ -195,7 +198,7 @@
     letter-spacing: 0.06em;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: center; 
 
     color: var(--color-white);
     background-color: var(--selection-color);
