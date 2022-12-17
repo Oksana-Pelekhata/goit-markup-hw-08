@@ -334,7 +334,7 @@ body {
   color: var(--selection-color);
 }
 
-.check-text span {
+.check-text-wrap {
   width: 16px;
   height: 15px;
   /* margin-left: 5px; */
@@ -353,12 +353,12 @@ body {
   border-color: var(--color-black);
   fill: transparent;
 }
-.modal-check:checked + .check-text span {
+.modal-check:checked + .check-text-wrap {
   background-color: var(--selection-color);
   border: none;
   fill: var(--color-white);
 }
-.modal-check:focus + .check-text span {
+.modal-check:focus + .check-text-wrap {
   border-color: var(--selection-color);
 }
 
@@ -1212,6 +1212,10 @@ body {
           transform: rotate(90deg);
 }
 
+.mob-menu-bottom {
+  margin-top: auto;
+}
+
 .hero {
   background-color: var(--background-color);
   text-align: center;
@@ -1398,6 +1402,19 @@ body {
   margin-bottom: 50px;
   gap: 8px;
 }
+@media screen and (max-width: 767px) {
+  .portfolio-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
 .gallery-list {
   display: -webkit-box;
@@ -1409,7 +1426,17 @@ body {
 }
 
 .gallery-list .item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery-list .item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-list .item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .gallery-overlay {
@@ -1453,7 +1480,14 @@ body {
 }
 
 .gallery-link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow var(--transition-func);
   transition: -webkit-box-shadow var(--transition-func);
   transition: box-shadow var(--transition-func);
@@ -1465,6 +1499,9 @@ body {
 }
 
 .card {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid var(--portfolio-border);
   border-left: 1px solid var(--portfolio-border);

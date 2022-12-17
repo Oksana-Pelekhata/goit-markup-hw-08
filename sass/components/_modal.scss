@@ -151,7 +151,7 @@
     color: var(--selection-color);
 }
 
-.check-text span {
+.check-text-wrap {
     width: 16px;
     height: 15px;
     /* margin-left: 5px; */
@@ -164,13 +164,13 @@
     border-color: var(--color-black);
     fill: transparent;
 
-    .modal-check:checked+& {
+    .modal-check:checked + & {
         background-color: var(--selection-color);
         border: none;
         fill: var(--color-white);
     }
     
-        .modal-check:focus+& {
+        .modal-check:focus + & {
         border-color: var(--selection-color);
     }
 }

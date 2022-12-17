@@ -61,7 +61,7 @@
                 </button>
                 <nav class="navigation-mob">
                     <ul class="menu-mob">
-                        <li class="menu-mob__item"><a class="menu-mob__link current" href="#">Студія</a></li>
+                        <li class="menu-mob__item"><a class="menu-mob__link" href="#">Студія</a></li>
                         <li class="menu-mob__item"><a class="menu-mob__link" href="./portfolio.html">Портфоліо</a></li>
                         <li class="menu-mob__item"><a class="menu-mob__link" href="#">Контакти</a></li>
                     </ul>
@@ -96,10 +96,8 @@
         <!--hero-->
         <section class="hero">
             <div class="container">
-
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
-
             </div>
         </section>
         <!--advantages-->
@@ -537,12 +535,14 @@
                 <div class="modal-field check">
                     <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden">
                     <label for="policy" class="check-text">
-                        <span>
+                        <span class="check-text-wrap">
                             <svg class="check-icon" width="16" height="15">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
+                        <span>
                         Погоджуюся з розсилкою та приймаю <a class="policy-link" href="#"> Умови договору</a>
+                        </span>
                     </label>
                 </div>
                 <button type="submit" class="modal-button">Відправити</button>
