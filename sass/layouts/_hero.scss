@@ -28,8 +28,8 @@
     }
 
     @media screen and (min-width: 768px) {
-    padding-right: 189px;
-    padding-left: 189px;
+    // padding-right: 189px;
+    // padding-left: 189px;
     background-image: var(--gradient), url(../images/hero.jpg);
        
     @media (min-device-pixel-ratio: 2),
@@ -39,11 +39,11 @@
         }
     }
     @media screen and (min-width: 1200px) {
-        // max-width: 1600px;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    padding-right: 237px;
-    padding-left: 237px;
+    // padding-right: 237px;
+    // padding-left: 237px;
     }
 }
 
@@ -59,10 +59,12 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color-white);
+    max-width: 380px;
 
     @media screen and (min-width: 1200px) {
         font-size: 44px;
         line-height: calc(60/44);
+        max-width: 696px;
         }
 }
 

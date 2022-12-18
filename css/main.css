@@ -1245,8 +1245,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding-right: 189px;
-    padding-left: 189px;
     background-image: var(--gradient), url(../images/hero.jpg);
   }
 }
@@ -1257,10 +1255,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    padding-right: 237px;
-    padding-left: 237px;
   }
 }
 
@@ -1275,11 +1272,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
+  max-width: 380px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.3636363636;
+    max-width: 696px;
   }
 }
 
